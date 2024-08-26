@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 40px;
+}
+
+#checkbox{
+    display: none;
+}
+
+.content>p {
+    background-color:lightblue;
+    font-size: 1.5rem;
+    padding: 10px; 
+    text-align: center;
+}
+
+.content {
+    background-color:rgb(227, 163, 140);
+    position: absolute;
+    left: -400px;
+    border-radius: 3px;
+    width: 250px;
+    transition: all 2s ease-in;
+}
+#checkbox:checked+.content{
+    transform: translateX(450px);
+}

@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    border: 1px solid;
+}
+.container1{
+    width: 400px;
+    height: 400px;
+    padding: 60px;
+    background-color:lightcoral;
+}
+.container label{
+    border: 2px solid blueviolet;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    transition: transform 2s ease;
+}
+.container2 label:hover {
+    background-color: rgb(42, 186, 234);
+}
+#rotate,#scale,#skew,#translate {
+    display: none;
+}
+#rotate:hover ~ .img{
+    transform: rotate(360deg);
+    transition: 5s ease;
+}
+#scale:hover ~ .img{
+    transform: scale(1.5);
+}
+#skew:hover ~ .img{
+    transform: skewX(40deg);
+}
+#translate:hover~ .img{
+    transform: translateY(50%);
+}
+.img{
+    margin: 100px;
+}
+#checkbox:checked+.content{
+    display: block;
+}
